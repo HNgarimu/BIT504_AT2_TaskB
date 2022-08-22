@@ -15,7 +15,7 @@ import java.awt.BasicStroke;
 
 public class PongPanel extends JPanel implements ActionListener, KeyListener {
 
-	private final static Color BACKGROUND_COLOUR = Color.BLACK;
+	private final static Color BACKGROUND_COLOUR = Color.BLUE;
 	private final static int TIMER_DELAY = 5;
 	private final static int BALL_MOVEMENT_SPEED = 2;
 	private final static int POINTS_TO_WIN = 3;
@@ -62,7 +62,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	@Override
 	public void keyReleased(KeyEvent event) {
 		
-		if(event.getKeyCode() == KeyEvent.VK_W || event.getKeyCode() == KeyEvent.VK_S) {
+		if(event.getKeyCode() == KeyEvent.VK_Q || event.getKeyCode() == KeyEvent.VK_A) {
             paddle1.setYVelocity(0);
         }
 		
